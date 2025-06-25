@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여행 계획 짜기</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>✈️ 나만의 여행 계획 짜기</h1>
+
+        <label>여행 제목</label>
+        <input type="text" id="title" placeholder="예: 일본 온천 여행" />
+        <br>
+        <label>여행 기간</label>
+        <input type="date" id="startDate" />
+        <input type="date" id="endDate" />
+        <br>
+        <label>여행 지역</label>
+        <input type="text" id="location" placeholder="예: 오사카, 교토" />
+        <br>
+        <label>일정 추가</label>
+        <textarea id="plan" placeholder="예: 오전 - 기온 거리 산책, 오후 - 라멘 먹기"></textarea>
+        <button id="addBtn">일정 추가하기</button>
+
+        <div class="schedule-list" id="scheduleList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
