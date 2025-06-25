@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>일식 맛집 리스트</title>
+  <link rel="stylesheet" href="./src/css/ilsik.css" />
+  <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=86ibnd4q5w"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- 왼쪽 맛집 리스트 -->
+    <div class="left">
+      <h1> 일식 맛집 추천</h1>
+      <ul>
+        <li onclick="toggle(this)">
+          <div class="store-name">스시마루</div>
+          <div class="description">후문의 초밥집. 합리적인 가격에 초밥을 양껏 먹을 수 있다. 밥약하기 좋은 장소로, 갈 데가 애매하다면 스시마루를 외쳐보자.</div>
+          <div class="photo">
+            <a href="https://naver.me/GMmhpqmo" target="_blank">
+              <img src="./src/img/sushi.jpg" alt="스시마루" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">카츠정연 </div>
+          <div class="description">회기 쪽 돈카츠집. 시립대 근처라기엔 상당히 거리가 있지만, 그럼에도 불구하고 빼놓을 수 없는 맛집이다. 당일 재고가 정해져있으니 일찍 가는것을
+            추천한다. </div>
+          <div class="photo">
+            <a href="https://naver.me/Grma963B" target="_blank">
+              <img src="./src/img/cartz.jpg" alt="카츠정연" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">빨간대문</div>
+          <div class="description">후문의 라멘 집. 다양한 종류의 라멘들을 맛볼 수 있다. 가게가 약간 작기 때문에 자리가 없는 일이 빈번하다.</div>
+          <div class="photo">
+            <a href="https://naver.me/FW67WZLU" target="_blank">
+              <img src="./src/img/daemun.jpg" alt="빨간대문" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">도토리군버섯양</div>
+          <div class="description">정문의 샤브샤브집. 국물과 소스가 일품이며, 여름 계절 메뉴인 냉면도 상당한 맛을 자랑한다. 이곳 또한 밥약 명소로 유명하다.</div>
+          <div class="photo">
+            <a href="https://naver.me/Fk7wh5mB" target="_blank">
+              <img src="./src/img/dotori.jpg" alt="도토리군버섯양" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">반지하돈부리</div>
+          <div class="description">후문의 덮밥집. 연어덮밥이 정말 맛있다. 이곳 또한 크기가 크지 않아 대기가 길다. 가끔 커플들이 목격되기도 한다.</div>
+          <div class="photo">
+            <a href="https://naver.me/FIf7HhcC" target="_blank">
+              <img src="./src/img/banjiha.jpg" alt="반지하돈부리" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="right">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="ilsik.js"></script>
+
+</body>
+
+</html>

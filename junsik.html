@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>중식 맛집 리스트</title>
+  <link rel="stylesheet" href="./src/css/junsik.css" />
+  <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=86ibnd4q5w"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- 왼쪽 맛집 리스트 -->
+    <div class="left">
+      <h1> 중식 맛집 추천</h1>
+      <ul>
+        <li onclick="toggle(this)">
+          <div class="store-name">돈돈돼지갈비후라이드짬뽕도감</div>
+          <div class="description">정문의 짬뽕 / 치킨집. 짬뽕이 아주 맛있다. 아사히 생맥을 곁들여 먹으면 특히 맛있다고 한다. 식사겸 술이 가능해 이곳 또한 낮술 명소다.</div>
+          <div class="photo">
+            <a href="https://naver.me/Fjbn9UjR" target="_blank">
+              <img src="./src/img/dondon.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">신락원 </div>
+          <div class="description">정문의 중국집. 룸이 있어 아늑한 분위기가 연출된다. 동네 중국집보다는 정통 중화요리집에 가까운 분위기라고 한다. 세프님이 청와대 요리사였다는 카더라가
+            있다. </div>
+          <div class="photo">
+            <a href="https://naver.me/59vqUY90" target="_blank">
+              <img src="./src/img/sinlak.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">현대반점</div>
+          <div class="description">배달을 시키기 좋은 중국집. 짜장면과 찹쌀 탕수육이 특히 맛있다. 돗자리를 들고 배봉탕에 가서 피크닉을 하면 아주 행복하다.</div>
+          <div class="photo">
+            <a href="https://naver.me/FFGMHrJ5" target="_blank">
+              <img src="./src/img/hyundai.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">샹츠마라</div>
+          <div class="description">정문의 마라탕 집. 시립대 근처 유일무이한 마라탕 집이다. 마라탕과 더불어 꿔바로우도 아주 맛있다고 한다. 입구가 독특하게 생겨 찾기 어려우니 눈을 크게
+            뜨자.</div>
+          <div class="photo">
+            <a href="https://naver.me/xl0m27pt" target="_blank">
+              <img src="./src/img/mara.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- 오른쪽 고정 사진 영역 -->
+    <div class="right">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="junsik.js"></script>
+</body>
+
+</html>

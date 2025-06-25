@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한식 맛집 리스트</title>
+  <link rel="stylesheet" href="./src/css/hansik.css" />
+  <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=86ibnd4q5w"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- 왼쪽 맛집 리스트 -->
+    <div class="left">
+      <h1> 한식 맛집 추천</h1>
+      <ul>
+        <li onclick="toggle(this)">
+          <div class="store-name">19고깃집</div>
+          <div class="description">삼겹 오겹 반반 초벌 구이가 맛있는 정문의 고깃집. 항상 사람이 많기 때문에 전화로 예약하고 가는걸 추천 한다. 오픈런 시간은 다섯시이다. 참고하자.
+          </div>
+          <div class="photo">
+            <a href="https://naver.me/F884GoyG" target="_blank">
+              <img src="./src/img/19gogi.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">온반 한상</div>
+          <div class="description">여러종류의 찌개를 파는 후문의 한식집. 시대생에겐 거의 학식과 같은 존재다. 제육추가가 기본소양이다. </div>
+          <div class="photo">
+            <a href="https://naver.me/Fmf5kfMF" target="_blank">
+              <img src="./src/img/onban.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">마루한</div>
+          <div class="description">육회 비빔밥이 맛있는 정문의 고깃집. 가서 육비 특을 시키는 게 예의이다. 그 누구도 이곳에서 고기를 주문한 적이 없다는 소문이 있다.</div>
+          <div class="photo">
+            <a href="https://naver.me/Fuzru4LS" target="_blank">
+              <img src="./src/img/maruhan.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">옛날집</div>
+          <div class="description">초벌구이 삼겹살과 냉동 삼겹살을 파는 정문의 고깃집. 초벌구이파와 냉동 삼겹파가 항상 언쟁을 벌인다. 소주가 싸다는 것이 아주 큰 장점이다. 무려
+            3500원이다.</div>
+          <div class="photo">
+            <a href="https://naver.me/xBwWwntN" target="_blank">
+              <img src="./src/img/yetnal.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">위대한 족보</div>
+          <div class="description">가성비 좋은 정문 족발/보쌈 무한리필 집. 꽤나 저렴한 가격에 돼지고기를 신나게 먹을 수 있다. 점심 세트도 무한 리필은 아니지만 구성이 매우 좋다.
+          </div>
+          <div class="photo">
+            <a href="https://naver.me/5HkHTJO3" target="_blank">
+              <img src="./src/img/jokbo.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">꽃닭</div>
+          <div class="description">정문의 찜닭집. 지하가 찜닭집이고 1층이 김치찜 집이다. 수상하게 치즈 계란 말이가 맛있다. 이를 안주 삼아 낮술을 하는것도 나쁘지 않다.</div>
+          <div class="photo">
+            <a href="https://naver.me/xExW7ZGA" target="_blank">
+              <img src="./src/img/ggotdak.jpg" alt="족보" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 오른쪽 고정 사진 영역 -->
+    <div class="right">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="hansik.js"></script>
+</body>
+
+</html>

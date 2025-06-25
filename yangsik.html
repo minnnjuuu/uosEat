@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>양식 맛집 리스트</title>
+  <link rel="stylesheet" href="./src/css/yangsik.css" />
+  <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=86ibnd4q5w"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- 왼쪽 맛집 리스트 -->
+    <div class="left">
+      <h1> 양식 맛집 추천</h1>
+      <ul>
+        <li onclick="toggle(this)">
+          <div class="store-name">봄솔레씨네</div>
+          <div class="description">정문의 양식집. 크림류 파스타와 고구마 피자가 특히 맛있다. 갈때마다 진대를 하게된다는게 일종의 단점이다.</div>
+          <div class="photo">
+            <a href="https://naver.me/FK5zvI12" target="_blank">
+              <img src="./src/img/bom.jpg" alt="봄솔레씨네" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">와인처럼 </div>
+          <div class="description">가성비가 좋은 정문 파스타 집. 뷰가 상당히 좋은것으로 유명하다. 와인을 잔 단위로 팔기 때문에 분위기에 휩쓸려 낮술을 하게 되는 일이 빈번하다.
+          </div>
+          <div class="photo">
+            <a href="https://naver.me/5GpYZlAA" target="_blank">
+              <img src="./src/img/wine.jpg" alt="와인처럼" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">해피 디쉬 클럽</div>
+          <div class="description">분위기가 좋은 정문 양식집. 봄, 가을에 테라스가 매우 느낌이 좋다. 곁들여 먹을 칵테일도 주문할 수 있으나, 음식의 전반적인 가격대가 높다는것이
+            단점이다.</div>
+          <div class="photo">
+            <a href="https://naver.me/FPn5jWy4" target="_blank">
+              <img src="./src/img/happy.jpg" alt="해피 디쉬 클럽" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+        <li onclick="toggle(this)">
+          <div class="store-name">피자 파스토</div>
+          <div class="description">후문의 피잣집. 피자와 파스타가 세트로 나오며, 가격또한 저렴하다는 것이 장점이다. 분위기가 좋아 데이트 코스로 유명하다. </div>
+          <div class="photo">
+            <a href="https://naver.me/xoHitvk3" target="_blank">
+              <img src="./src/img/pasto.jpg" alt="피자 파스토" class="thumbnail" />
+            </a>
+          </div>
+        </li>
+
+
+      </ul>
+    </div>
+
+    <div class="right">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="yangsik.js"></script>
+
+</html>

@@ -1,0 +1,102 @@
+body {
+  font-family: 'Georgia', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  /* 텍스트가 보이도록 색상 조절 */
+  padding: 20px;
+  /* 안쪽 여백 */
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.right {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.photo-large {
+  width: 90%;
+  height: 85%;
+  background-color: #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #666;
+}
+
+h1 {
+  color: #b24c24;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f2ec;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.store-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+  /* 가운데 정렬 */
+}
+
+.description {
+  margin-top: 5px;
+  display: none;
+}
+
+.description,
+.photo {
+  word-wrap: break-word;
+  /* 긴 단어 줄바꿈 */
+  max-height: 0;
+  /* 기본은 닫힘 상태 */
+  overflow: hidden;
+  /* 넘치는 내용 숨기기 */
+  transition: max-height 0.4s ease;
+}
+
+.expanded .description,
+.expanded .photo {
+  max-height: 200px;
+  /* 펼쳤을 때 최대 높이 제한 */
+}
+
+.photo a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.photo a:hover {
+  text-decoration: underline;
+}
